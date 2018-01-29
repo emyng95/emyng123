@@ -263,6 +263,7 @@ nav a{
     font-size: 1.5rem;
     text-shadow: 1px 1px #F5BAB6;
     color:rgb(65, 60, 60);
+    z-index: 5;
 }
 .contact-info a{
     color:rgb(65, 60, 60);
