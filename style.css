@@ -114,6 +114,7 @@ nav a{
     max-width:100%;
     display: inline-block;
     opacity:0.3;
+    z-index: -1
 }
 
 
