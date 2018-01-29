@@ -1,0 +1,422 @@
+
+* {
+    margin:0;
+}
+
+p{
+    margin:0;
+}
+
+body{
+    position:relative;
+}
+
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.nav-top:hover{
+    opacity: 1;
+}
+
+.nav-top{
+    font-family: 'Supermercado One', cursive;
+    font-size: 2.2rem;
+    position:fixed;
+    width:100%;
+    text-align: center;
+    margin:2% 0;
+    z-index: 99;
+    opacity:0;
+    transition: opacity .2s;
+}
+
+.nav-top.is-showing{
+    opacity:1
+
+}
+
+#nav-about.active,
+#nav-home.active,
+#nav-project.active,
+a:active,
+a:hover
+{
+    text-decoration: underline;
+    color:#71976B;
+}
+
+nav a{
+    text-decoration: none;
+    color:#756C6C;
+    margin:0 5rem;
+}
+
+#hello-letter{
+    height: 25vh;
+    max-width:100%;
+    display:block;
+    margin-top:30vh;
+    margin-left: 30vw;
+    opacity:1;
+    transform: scale(1.5);
+    transition: all 0.1s ease-in;
+
+}
+
+
+#scroll{
+    width:2.2rem;
+    height:6rem;
+    margin-top:20vh;
+    margin-left:50vw;
+    position:relative;
+    animation-name:updown;
+    animation-duration:0.4s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+@keyframes updown {
+    from{margin-top:20vh;}
+    to{margin-top:22vh;}
+
+}
+
+#scroll.is-hiding{
+    opacity:0;
+    transition:opacity 0.2s ease-out;
+}
+
+
+.sub-title{
+    position:relative;
+    height:12vh ;
+    max-width:100%;
+    display:block;
+    margin-top: 10vh;
+    margin-left: 0;
+    opacity: 0;
+
+}
+
+.sub-title.is-showing{
+    opacity: 1;
+    transform:translateX(-5px);
+    transition: all 1s ease-in-out;
+
+}
+
+.blocks{
+    position:absolute;
+    height: auto;
+    max-width:100%;
+    display: inline-block;
+    opacity:0.3;
+}
+
+
+#block-move{
+    margin-top:15%;
+    margin-left: auto;
+    transform: rotate(-30deg)
+}
+
+#block-stick{
+    margin-top:60%;
+    margin-left:80%; 
+
+}
+
+
+#intro{
+    font-family: 'Supermercado One', cursive;
+    font-size: 5rem;
+    text-shadow: 6px 1px #F5BAB6;
+    color:rgb(65, 60, 60);
+    margin-top:50vh;
+    height: 600px;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+
+#honeycomb-info{
+    position:absolute;
+    height: 37rem;
+    max-width: 100%;
+    display: block;
+    margin-top:-7vh;
+    margin-left:5vw;
+    opacity:1;
+}
+
+
+.myself{
+    position:absolute;
+    height: 185px;
+    max-width: 100%;
+    display: block;
+    margin-top:60vh;
+    margin-left:5vw;
+    opacity: 1;
+    /*transform: translateX(20px);
+    transition: all 0.5s ease-in-out;*/
+
+}
+
+
+.myself.is-showing{
+    opacity: 1;
+    transform: translateY(100px)
+
+}
+
+
+#content > div {
+  margin-bottom:10px;
+}
+
+/* Set Up Grid-Area Names */
+#text {grid-area:info-about-emily; }
+#image {grid-area:emily-clipart; }
+
+/*little bit more about me section*/
+#about{
+    height:45%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "info-about-emily"
+      "info-about-emily"
+      "info-about-emily"
+      "emily-clipart";
+  }
+
+#text,#image{
+    text-align: center;
+}
+
+#aboutme-title{
+    font-family: 'Supermercado One', cursive;
+    font-size:3rem;
+    text-shadow: 3px 1px #F5BAB6;
+    color:rgb(65, 60, 60);
+    margin:2vh auto;
+    display: inline-block;
+    height:3.5rem;
+    max-width: 100%;
+
+}
+
+#word-bubble{
+    height:24rem;
+    width:75vw;
+    position:absolute;
+    margin:2rem auto;
+    top:134vh;
+    left:0;
+    right:0;
+
+}
+
+#textAboutMe{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.3rem;
+    width:60vw;
+    color:rgb(65, 60, 60);    
+    line-height: 2.2rem;
+    position:absolute;
+    margin:2rem auto;
+    top:144vh;
+    left:0;
+    right:0;
+    z-index: 5;
+}
+
+#clipart-of-emily{
+    display:inline-block;
+    position: absolute;
+    margin: 0 auto;
+    bottom:8rem;
+    left: 0;
+    right: 0;
+    height:18rem;
+
+}
+
+#resume{
+    font-weight: 800;
+    font-size:1.8rem;
+    margin-top:20rem;
+}
+
+.contact-info{
+    font-family: 'Supermercado One', cursive;
+    display:inline-block;
+    margin-top:0.4rem;
+    margin-left:42rem;
+    height: 3rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #F5BAB6;
+    color:rgb(65, 60, 60);
+}
+.contact-info a{
+    color:rgb(65, 60, 60);
+}
+
+
+.carousel-item{
+    margin-top:10vh;
+    margin-left: 13.5vw;
+    height:70vh;
+    width: 50vw;
+    opacity: 1;
+
+}
+
+.img-fluid{
+    height:60vh;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    opacity: 1;
+}
+
+.carousel-control-prev-icon{
+    margin-top:5vh;
+    margin-left: 5vh;
+    margin-right: 0;
+    background-image: url("/picture/prev.png");
+    height:3rem;
+    z-index: 1;
+}
+
+.carousel-control-next-icon{
+    margin-top:5vh;
+    margin-left: 5vh;
+    margin-right: 0;
+    background-image: url("/picture/nex.png");
+    height:3rem;
+    z-index: 1;
+
+}
+
+.carousel-indicators .active{
+    background-color:#669966 ;
+    http://globalties.ucsd.edu/projects/one-village-philippines.html
+}
+
+.carousel-indicators li{
+    background-color:white;
+    border: 1px solid #669966;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+#sectOne{
+    height: 100%;
+    position: relative;
+    background-image: url("/picture/strip-background.png");
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: top;
+    background-repeat:no-repeat;
+    overflow: hidden;
+
+}
+
+#sectTwo{
+    height: 240%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#sectThree{
+    height:100%;
+    position: relative;
+    background-color: rgba(1,1,1,0);
+
+    text-align: center;
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+    .nav-top{
+        margin-top:80px;
+        font-size: 50px;
+        margin-left:-35px;
+        opacity:1;
+    }
+
+    nav a{
+        margin-left:80px;
+    }
+
+
+    .hello{
+        margin-left: 27%;
+    }
+
+    .about-title{
+        margin-top:-60px;
+        margin-left:-60px;
+
+    }
+
+
+    .blocks{
+        height:400px;
+        margin-top: 1500px;
+        margin-right:300px;
+        opacity:0.3;
+    }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+    .nav-top{
+        margin-top:80px;
+        font-size: 50px;
+        margin-left:-35px;
+        opacity:1;
+    }
+
+    nav a{
+        margin-left:80px;
+    }
+
+
+    .hello{
+        margin-left: 27%;
+    }
+
+    .about-title{
+        margin-top:-60px;
+        margin-left:-60px;
+
+    }
+
+
+    .blocks{
+        height:400px;
+        margin-top: 1500px;
+        margin-right:300px;
+        opacity:0.3;
+    }
+
+
+}
