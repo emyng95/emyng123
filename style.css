@@ -66,6 +66,11 @@ nav a{
 
 .about{
     text-align: center;
+    margin: 2rem;
+}
+
+.contact{
+    text-align: center;
     margin: 4rem;
 }
 
@@ -201,6 +206,31 @@ and (max-device-width : 736px) {
         display: inline-block;
         width:700px;
     }
+
+    .myself{
+        display:block;
+        width:62%;
+        margin: 3rem auto;
+    }
+
+    .about p{
+        display: inline-block;
+        width:700px;
+        font-family:'Lato', sans-serif;
+        line-height: 3.5rem;
+        font-size: 2.2rem;
+    }
+    
+    .resume{
+        display:block;
+        font-family:'Lato', sans-serif;
+        line-height: 3rem;
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin: 3rem auto;
+        color:rgb(44, 155, 27);
+    }
+    
 
 }
 
