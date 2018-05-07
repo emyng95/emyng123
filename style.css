@@ -1,6 +1,7 @@
 
 * {
     margin:0;
+
 }
 
 p{
@@ -16,30 +17,41 @@ html,body{
     width: 100%;
 }
 
-.nav-top:hover{
-    opacity: 1;
+
+.navbar{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 2rem;
 }
 
-.nav-top{
-    font-family: 'Supermercado One', cursive;
-    font-size: 2.2rem;
-    position:fixed;
-    width:100%;
-    text-align: center;
-    margin:2% 0;
-    z-index: 99;
-    opacity:0;
-    transition: opacity .2s;
+.navbar-brand{
+    font-size:1.725rem;
+    position: absolute;
+    top:2rem;
+    left: 50%;
+    margin-left: -110px !important;  /* 50% of your logo width */
+    display: block; 
+    letter-spacing: 0.175em;
+    
 }
 
-.nav-top.is-showing{
-    opacity:1
-
+.nav-link{
+    font-size:0.8rem;
 }
 
-#nav-about.active,
-#nav-home.active,
-#nav-project.active,
+.navbar-toggler-icon{ 
+    width: 2.5rem;
+    height: 3rem;
+    background-size: 150% 150%;
+}
+
+.navbar-nav{
+    margin-left:2rem;
+    margin-top:0.5rem;  
+}
+
+
+
 a:active,
 a:hover
 {
@@ -49,376 +61,158 @@ a:hover
 
 nav a{
     text-decoration: none;
-    color:#756C6C;
-    margin:0 5rem;
+    margin:0 1rem;
 }
 
-#hello-letter{
-    height: 25vh;
-    max-width:100%;
+.about{
+    text-align: center;
+    margin: 4rem;
+}
+
+.myself{
     display:block;
-    margin-top:30vh;
-    margin-left: 30vw;
-    opacity:1;
-    transform: scale(1.5);
-    transition: all 0.1s ease-in;
-
+    width:22%;
+    margin: 3rem auto;
 }
 
-
-#scroll{
-    width:2.2rem;
-    height:6rem;
-    margin-top:20vh;
-    margin-left:50vw;
-    position:relative;
-    animation-name:updown;
-    animation-duration:0.4s;
-    animation-direction: alternate;
-    animation-iteration-count:infinite;
-}
-
-@keyframes updown {
-    from{margin-top:20vh;}
-    to{margin-top:22vh;}
-
-}
-
-#scroll.is-hiding{
-    opacity:0;
-    transition:opacity 0.2s ease-out;
-}
-
-
-.sub-title{
-    position:relative;
-    height:12vh ;
-    max-width:100%;
-    display:block;
-    margin-top: 10vh;
-    margin-left: 0;
-    opacity: 0;
-
-}
-
-.sub-title.is-showing{
-    opacity: 1;
-    transform:translateX(-5px);
-    transition: all 1s ease-in-out;
-
-}
-
-.blocks{
-    position:absolute;
-    height: auto;
-    max-width:100%;
+.about p{
     display: inline-block;
-    opacity:0.3;
-    z-index: -1
+    width:540px;
+    font-family:'Lato', sans-serif;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
-
-#block-move{
-    margin-top:15%;
-    margin-left: auto;
-    transform: rotate(-30deg)
+.resume{
+    display:block;
+    font-family:'Lato', sans-serif;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(44, 155, 27);
 }
 
-#block-stick{
-    margin-top:60%;
-    margin-left:80%; 
-
-}
 
 
 #intro{
-    font-family: 'Supermercado One', cursive;
-    font-size: 5rem;
-    text-shadow: 6px 1px #F5BAB6;
-    color:rgb(65, 60, 60);
-    margin-top:50vh;
-    height: 600px;
-    max-width: 100%;
-    margin-left: 0;
-}
-
-
-#honeycomb-info{
-    position:absolute;
-    height: 37rem;
-    max-width: 100%;
-    display: block;
-    margin-top:-7vh;
-    margin-left:5vw;
-    opacity:1;
-}
-
-
-.myself{
-    position:absolute;
-    height: 185px;
-    max-width: 100%;
-    display: block;
-    margin-top:60vh;
-    margin-left:5vw;
-    opacity: 1;
-    /*transform: translateX(20px);
-    transition: all 0.5s ease-in-out;*/
-
-}
-
-
-.myself.is-showing{
-    opacity: 1;
-    transform: translateY(100px)
-
-}
-
-
-#content > div {
-  margin-bottom:10px;
-}
-
-/* Set Up Grid-Area Names */
-#text {grid-area:info-about-emily; }
-#image {grid-area:emily-clipart; }
-
-/*little bit more about me section*/
-#about{
-    height:45%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "info-about-emily"
-      "info-about-emily"
-      "info-about-emily"
-      "emily-clipart";
-  }
-
-#text,#image{
+    display:block;
     text-align: center;
-}
-
-#aboutme-title{
-    font-family: 'Supermercado One', cursive;
-    font-size:3rem;
-    text-shadow: 3px 1px #F5BAB6;
-    color:rgb(65, 60, 60);
-    margin:2vh auto;
-    display: inline-block;
-    height:3.5rem;
-    max-width: 100%;
-
-}
-
-#word-bubble{
-    height:24rem;
-    width:75vw;
-    position:absolute;
-    margin:2rem auto;
-    top:134vh;
-    left:0;
-    right:0;
-
-}
-
-#textAboutMe{
-    font-family: 'Ubuntu', sans-serif;
-    font-size:1.3rem;
-    width:60vw;
-    color:rgb(65, 60, 60);    
-    line-height: 2.2rem;
-    position:absolute;
-    margin:2rem auto;
-    top:144vh;
-    left:0;
-    right:0;
-    z-index: 5;
-}
-
-#clipart-of-emily{
-    display:inline-block;
-    position: absolute;
-    margin: 0 auto;
-    bottom:8rem;
-    left: 0;
-    right: 0;
-    height:18rem;
-
-}
-
-#resume{
+    font-family:'Lato', sans-serif;
+    font-size: 2.5rem;
     font-weight: 800;
-    font-size:1.8rem;
-    margin-top:20rem;
+    color:black;
+    margin:20vh auto;
+
+    margin-bottom:22vh
 }
 
-.contact-info{
-    font-family: 'Supermercado One', cursive;
-    display:inline-block;
-    margin-top:0.4rem;
-    margin-left:42rem;
-    height: 3rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #F5BAB6;
-    color:rgb(65, 60, 60);
-    z-index: 5;
-}
-.contact-info a{
-    color:rgb(65, 60, 60);
+.tagline{
+    display: inline-block;
+    width:700px;
 }
 
 
-.carousel-item{
-    margin-top:10vh;
-    margin-left: 13.5vw;
-    height:70vh;
-    width: 50vw;
-    opacity: 1;
 
+
+
+.flex-box-wrap{
+    display:flex;
+    flex-wrap:wrap;
 }
 
-.img-fluid{
-    height:60vh;
-}
-
-
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    opacity: 1;
-}
-
-.carousel-control-prev-icon{
-    margin-top:5vh;
-    margin-left: 5vh;
-    margin-right: 0;
-    background-image: url("/picture/prev.png");
-    height:3rem;
-    z-index: 1;
-}
-
-.carousel-control-next-icon{
-    margin-top:5vh;
-    margin-left: 5vh;
-    margin-right: 0;
-    background-image: url("/picture/nex.png");
-    height:3rem;
-    z-index: 1;
-
-}
-
-.carousel-indicators .active{
-    background-color:#669966 ;
-    http://globalties.ucsd.edu/projects/one-village-philippines.html
-}
-
-.carousel-indicators li{
-    background-color:white;
-    border: 1px solid #669966;
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-
-#sectOne{
-    height: 100%;
-    position: relative;
-    background-image: url("/picture/strip-background.png");
-    background-attachment: fixed;
-    background-size:cover;
-    background-position: top;
-    background-repeat:no-repeat;
-    overflow: hidden;
-
-}
 
 #sectTwo{
-    height: 240%;
-    position: relative;
-    overflow: hidden;
+    height: 135%;
+    position: relative;   
 }
 
 
-#sectThree{
-    height:100%;
-    position: relative;
+.footer{
+    height:10%;
     background-color: rgba(1,1,1,0);
-
     text-align: center;
+    color:rgba(1, 1, 1, 0.521);
 }
 
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) {
+.footer p{
+    margin-top:3rem; 
 
-    .nav-top{
-        margin-top:80px;
-        font-size: 50px;
-        margin-left:-35px;
-        opacity:1;
-    }
-
-    nav a{
-        margin-left:80px;
-    }
-
-
-    .hello{
-        margin-left: 27%;
-    }
-
-    .about-title{
-        margin-top:-60px;
-        margin-left:-60px;
-
-    }
-
-
-    .blocks{
-        height:400px;
-        margin-top: 1500px;
-        margin-right:300px;
-        opacity:0.3;
-    }
 }
+
+
+#projects{
+    margin: 0 5rem;
+}
+
+.img-project{
+    max-width: 640px;
+}
+
 
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px) {
+and (max-device-width : 736px) {
 
-    .nav-top{
-        margin-top:80px;
-        font-size: 50px;
-        margin-left:-35px;
-        opacity:1;
+    .navbar{
+        padding:2.5rem 2rem;
+    }
+
+
+    .navbar-brand{
+        font-size:3.2rem;
+        margin-left: -175px !important;
+    }
+
+    .nav-link{
+        font-size: 2.2rem;
+        margin-bottom:2rem 
+    }
+
+    .navbar-nav{
+        margin: 5rem 0;
     }
 
     nav a{
-        margin-left:80px;
+        margin:0 auto;
     }
 
-
-    .hello{
-        margin-left: 27%;
-    }
-
-    .about-title{
-        margin-top:-60px;
-        margin-left:-60px;
-
+    .img-project{
+        margin-left:4rem; 
+        max-width:840px;
     }
 
 
     .blocks{
-        height:400px;
+        height:200px;
         margin-top: 1500px;
         margin-right:300px;
         opacity:0.3;
     }
 
+    #intro{
+        font-size:5rem;
+        font-weight: 800;
+        color:black;
+        margin:16vh auto;
+        margin-bottom:22vh;
+    }
+    
+    .tagline{
+        display: inline-block;
+        width:700px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 1680px) {
+    
+    .img-project{
+        max-width: 760px;
+    }
+
+    .flex-box-wrap{
+        margin-left:1.5rem;
+    }
 
 }

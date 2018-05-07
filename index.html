@@ -9,45 +9,53 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Supermercado+One|Ubuntu" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato|Supermercado+One" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
     <title>Emily's Portfolio</title>
 
 </head>
-    <body>
-        <nav class="nav-top">
-            <a id="nav-home" href="#sectOne">HOME</a>
-            <a id="nav-about" href="#sectTwo">ABOUT</a>
-            <a id="nav-project" href="#sectThree">PROJECTS</a>
-        </nav>
-
-        <div id="sectOne">
-            <section id="home">
-                <img src="/picture/hello-letter.png" id="hello-letter" alt="hello">
-                <img src="/picture/scroll-1.png" id="scroll">
-            </section>
+    
+<body id="page-top">
+       
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">EMILY YANG</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">Work <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
         </div>
+    </nav>
 
-        <div id="sectTwo">
 
+             <!--
             <img src="/picture/block-stick.png" class="blocks" id="block-stick" alt="decor">
+            <img src="/picture/block-move.png" class="blocks" id="block-move" alt="decor">
+
+           
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <img src="/picture/block-move.png" class="blocks" id="block-move" alt="decor">
+                    <div class="col-lg-12">
                         <p id="intro">
-                                Welcome to Emily's Portfolio.
+                                Welcome to Emily's Portfolio
                         <p>
                     </div>
+                </div>
+            </div>
+                    <!--
                     <div class="col-lg-6">
                         <img src="/picture/honeycomb-3.png" id="honeycomb-info" alt="about-me-honeycomb">
                         <a href="/picture/resume.pdf" target="_blank">
                             <img src="/picture/myself.png" class="myself" alt="picture-of-me">
                         </a>
                     </div>
+
                 </div>
             </div>
 
@@ -63,13 +71,45 @@
 
                 <a id="resume" href="/picture/resume.pdf" target="_blank">Get My Resume</a>
                 
-            -->
+          
         
+        </div>
+
+
+        <div id="sectThree">
+            -->
+        <div id="sectTwo">
+            <section id="intro">
+                <p class="tagline"> - Emily Yang is a designer, problem solver, aspiring entrepreneur currently based in San Diego. 
+                </p>
+            </section>
+
+            <section id="projects">
+                <div class="flex-box-wrap">
+                    <a href="https://emyng95.github.io/spatacular-new/index.html" target="_blank">
+                        <img id="spatacular" onmouseover="document.getElementById('spatacular').src='/picture/spatacular-1.png'" onmouseout="document.getElementById('spatacular').src='/picture/spatacular.png'" class="img-project img-fluid" src="/picture/spatacular.png" alt="First slide">                
+                    </a>
+                    <a href="https://emyng95.github.io/cupofjoe/index.html" target="_blank">
+                        <img id="cupofjoe" onmouseover="document.getElementById('cupofjoe').src='/picture/Cupofjoe-1.png'" onmouseout="document.getElementById('cupofjoe').src='/picture/Cupofjoe.png'"class="img-project img-fluid" src="/picture/Cupofjoe.png" alt="Third slide">
+                    </a>
+                    <a href="https://ucsdfoodbank.github.io/index.html" target="_blank">
+                        <img id="foodbank" onmouseover="document.getElementById('foodbank').src='/picture/Foodbank-1.png'" onmouseout="document.getElementById('foodbank').src='/picture/Foodbank.png'"class="img-project img-fluid" src="/picture/Foodbank.png" alt="Second slide">
+                    </a>
+                    <a href="https://www.ticktbox.com/marketing.php" target="_blank">
+                        <img id="ticktbox" onmouseover="document.getElementById('ticktbox').src='/picture/Ticktbox-1.png'" onmouseout="document.getElementById('ticktbox').src='/picture/Ticktbox.png'"class="img-project img-fluid" src="/picture/Ticktbox.png" alt="Second slide">
+                    </a>
+                </div>
+            </section>
+        </div>
+<!--
+        <div id="sectFour">
             <section id="about">
                 <section id="text">
                     <p id="aboutme-title">
                         A little bit more about me...
                     </p>
+
+                <!--
                     <p id="textAboutMe">
                         My name is Emily Yang. I am currently a fourth year chemical engineering student in UCSD.
                         I have a strong passion in UX design and front end development. 
@@ -77,7 +117,7 @@
                         solver and an organized leader. I have self-taught HTML and CSS to pursue this dream.
                         I seek to create experience that captures the balance between usability and aesthetics.
                     </p>
-                    
+                    <!--
                     <img src="/picture/word-bubble-5.png" id="word-bubble" alt="decor">
                 </section>
 
@@ -87,60 +127,16 @@
                     <p class="contact-info">
                         tzyang@ucsd.edu <br/>
                         <a href="https://www.linkedin.com/in/tzyang" target="_blank">www.linkedin.com/in/tzyang</a>
-                </section>   
+                </section>  
                 
-            </section>
-        </div>
+                -->
+    
 
 
-        <div id="sectThree">
-            <section id="projects">
-                <div class="container">
-                    <p id="aboutme-title">
-                            here are some of my recent projects...
-                    </p>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <a href="https://emyng95.github.io/spatacular-new/index.html" target="_blank">
-                                    <img class="d-block img-fluid" src="/picture/spatacular.png" alt="First slide">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://ucsdfoodbank.github.io/index.html" target="_blank">
-                                    <img class="d-block img-fluid" src="/picture/Foodbank.png" alt="Second slide">
-                                </a>
-                            </div>
-                            <div class="carousel-item">
-                                <a href="https://emyng95.github.io/cupofjoe/index.html" target="_blank">
-                                    <img class="d-block img-fluid" src="/picture/Cupofjoe.png" alt="Third slide">
-                                </a>
-                            </div>
-                            
-                        </div>
-
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-        <div class="sect footer">
-            <section id="end"></section>
+        <div class="footer">
+            <p>
+                @ Emily Yang 2018
+            </p>
         </div>
 
     </body>

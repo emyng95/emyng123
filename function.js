@@ -5,21 +5,24 @@ $(document).ready(function(){
     var myselfhalfHeight =parseInt(($('.myself').height())/2);
 
 
+
     $(window).scroll(function(){
 
+
         var wScroll=$(this).scrollTop();
-        var wTest= parseInt($('#honeycomb-info').offset().top);
+        
+        /** var wTest= parseInt($('#honeycomb-info').offset().top);
         var wMyself= parseInt($('.myself').offset().top);
 
         $('#block-stick').css({
             'transform':'translate(0px, '+ wScroll/6 +'%)'
 
         })
+        */
 
         if(wScroll <= section1Height){
             $('#hello-letter').css({
                 'transform':'translate(0px, '+wScroll/3+'%)'
-
             })
         }
 
@@ -34,7 +37,7 @@ $(document).ready(function(){
 
         };
 
-
+        /** 
         if(Math.abs(wMyself+myselfhalfHeight-wTest-testhalfHeight)> 2)
         {
             $('.myself').css({
@@ -47,7 +50,11 @@ $(document).ready(function(){
 
 
         };
+        */
+      
+    
 
+    
 
 
         /**scrollspy effect for about
